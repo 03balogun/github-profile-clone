@@ -79,4 +79,11 @@ export default {
   .user_search label{
     font-weight: 600;
   }
+
+  @media (max-width: 768px) {
+    .user_search, .user__result--container{
+      width: 100%;
+      margin: 16px auto auto;
+    }
+  }
 </style>

@@ -202,3 +202,18 @@ body{
     text-align: center;
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+    .col-3, .col-6, .col-9{
+        width: 100%;
+    }
+
+    .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}

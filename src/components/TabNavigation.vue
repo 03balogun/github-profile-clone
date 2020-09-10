@@ -77,6 +77,7 @@
         display: flex;
         padding-inline-start: 0;
         margin: 0;
+        overflow-x: auto;
     }
 
     .tabs__nav ul li a{

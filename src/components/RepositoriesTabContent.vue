@@ -78,4 +78,17 @@
     .repositories__filter .btn span{
         color: #666
     }
+
+    @media (max-width: 768px) {
+        .repositories__filter {
+            flex-wrap: wrap;
+        }
+        .repositories__filter form {
+            width: 100%;
+        }
+
+        .repositories__filter .btn{
+            margin: 16px 3px 16px
+        }
+    }
 </style>

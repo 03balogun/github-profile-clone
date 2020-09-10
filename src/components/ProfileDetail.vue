@@ -46,12 +46,12 @@
                     </div>
                 </div>
                 <div class="profile__location">
-                    <div>
-                   <span class="iconify"
-                         data-icon="octicon:location-16"
-                         data-inline="false"
-                         data-width="16"
-                         data-height="16"></span>
+                    <div v-if="profile.location">
+                        <span class="iconify"
+                              data-icon="octicon:location-16"
+                              data-inline="false"
+                              data-width="16"
+                              data-height="16"></span>
                         {{ profile.location }}
                     </div>
                     <div>
@@ -152,5 +152,20 @@
 
     .profile__location div svg{
         margin-right: 7px;
+    }
+
+    @media (max-width: 768px) {
+        .profile{
+            margin-top: 20px;
+        }
+
+        .profile_avatar, .profile__details{
+            position: initial;
+        }
+        .profile_avatar img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
     }
 </style>

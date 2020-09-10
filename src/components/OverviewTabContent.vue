@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-12">
                     <div class="card" v-if="profile.login">
-                        <img :src="`http://ghchart.rshah.org/${profile.login}`" alt="Github chart"/>
+                        <img :src="`http://ghchart.rshah.org/${profile.login}`" class="w-100" alt="Github chart"/>
                         <br/><small><a href="https://ghchart.rshah.org/" target="_blank"
                                        rel="noopener noreferrer">Source for GitHub Chart API</a></small>
                     </div>

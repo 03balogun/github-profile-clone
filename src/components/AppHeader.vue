@@ -177,4 +177,13 @@
         border: 2px solid #24292e;
         border-radius: 50%;
     }
+
+    @media (max-width: 768px) {
+        .header__nav{
+            display: none;
+        }
+        .header__search:focus-within {
+            width: 100%;
+        }
+    }
 </style>
