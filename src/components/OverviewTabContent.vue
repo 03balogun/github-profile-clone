@@ -72,4 +72,13 @@
     .mt-24{
         margin-top: 24px;
     }
+    @media (max-width: 768px) {
+        .repo-cards-row .col-6:nth-child(odd){
+            padding-right: 0;
+        }
+
+        .repo-cards-row .col-6:nth-child(even){
+            padding-left: 0;
+        }
+    }
 </style>
