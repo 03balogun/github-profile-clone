@@ -4,6 +4,11 @@
     <main>
       <router-view/>
     </main>
+    <footer class="footer">
+      <router-link v-if="$route.name !== 'home'" to="/">
+        Back to search
+      </router-link>
+    </footer>
   </div>
 </template>
 

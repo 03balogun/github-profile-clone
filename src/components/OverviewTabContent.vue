@@ -1,7 +1,7 @@
 <template>
     <div class="" id="overview">
         <div class="mt-16" v-if="isFetchingDetails">
-            <span>Fetching profile details...</span>
+            <span>Fetching repository details...</span>
         </div>
         <template v-if="!isFetchingDetails && (staredRepositories.length || profile.login)">
             <div class="d-flex justify-content-between pt-16">

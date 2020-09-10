@@ -1,5 +1,16 @@
 # github-profile-clone
 
+## Description
+Github profile page clone using vanilla CSS. Search for users and view their profile.
+
+### Packages used
+
+- vue-router - For application routing
+- axios - For making API calls
+- vuex - For application state management
+
+
+
 ## Project setup
 ```
 yarn install
