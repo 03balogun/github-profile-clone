@@ -1,7 +1,7 @@
 import axios from 'axios'
 axios.defaults.baseURL = 'https://api.github.com';
 
-const RATE_LIMIT_MESSSAGE = 'Rate limit exceeded. Github allows a limit of 10 API calls per minute. Kindly wait for one minute, refresh your page and retry';
+const RATE_LIMIT_MESSAGE = 'Rate limit exceeded. Github allows a limit of 10 API calls per minute. Kindly wait for one minute, refresh your page and retry';
 
 export default {
     state: {
@@ -34,7 +34,7 @@ export default {
                 //
                 console.log(e);
                 if (e.response.status === 403){
-                    alert(RATE_LIMIT_MESSSAGE)
+                    alert(RATE_LIMIT_MESSAGE)
                 }
             }
         },
@@ -62,7 +62,7 @@ export default {
             } catch (error) {
                 console.log(error);
                 if (error.response.status === 403){
-                    alert(RATE_LIMIT_MESSSAGE)
+                    alert(RATE_LIMIT_MESSAGE)
                 }
             }
             commit('setState', { key: 'isFetchingDetails', value: false });
