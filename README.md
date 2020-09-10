@@ -3,6 +3,12 @@
 ## Description
 Github profile page clone using vanilla CSS. Search for users and view their profile.
 
+#### Search users by username
+Link: [https://github-profile-clone.netlify.app/](https://github-profile-clone.netlify.app/)
+
+#### or visit a user profile directly
+Link: [https://github-profile-clone.netlify.app/profile/03balogun](https://github-profile-clone.netlify.app/profile/03balogun)
+
 ### Packages used
 
 - vue-router - For application routing
