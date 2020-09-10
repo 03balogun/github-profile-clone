@@ -33,7 +33,7 @@ export default {
             }catch (e) {
                 //
                 console.log(e);
-                if (e.response.status === 403){
+                if (e.response && e.response.status === 403){
                     alert(RATE_LIMIT_MESSAGE)
                 }
             }
@@ -61,7 +61,7 @@ export default {
                 commit('setState', { key: 'staredRepositories', value: staredRepositories });
             } catch (error) {
                 console.log(error);
-                if (error.response.status === 403){
+                if (error.response && error.response.status === 403){
                     alert(RATE_LIMIT_MESSAGE)
                 }
             }
